@@ -168,3 +168,14 @@ h2 {
     background-color: aqua;
     padding: 20px;
 }
+
+/* ***** query ********** */
+@media  screen and (992px){
+    .main {
+        width: 980;
+    }
+    .row .card {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
