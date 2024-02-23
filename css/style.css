@@ -85,7 +85,6 @@ a {
     align-items: center;
     align-content: center;
 }
-
 /* ********** header **********++ */
 .header {
     background-color: rgba(0, 0, 0, 0.115);
@@ -144,7 +143,7 @@ h2 {
     padding: 20px 20px 20px 0;
     text-align: center;
     gap: 20px;
-    min-width: 200px;
+    min-width: 170px;
 }
 .card-img {
     width: 100%
@@ -171,13 +170,15 @@ h2 {
 }
 
 /* ***** query ********** */
-@media  screen and (992px){
+@media  screen and (max-width: 992px){
     .main {
-        width: 980;
+        width: 780px;
     }
-    .row .card {
+    .row {
         display: flex;
         flex-wrap: wrap;
+    }
+    .card{
         width: calc(100% / 4 - 20px);
     }
 
