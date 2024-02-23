@@ -1,0 +1,52 @@
+/* ***** reset****** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+/* **** general ****+ */
+.wrapper {
+    height: 100vh;
+}
+:root {
+	--color-bg-main: #141922;
+	--color-bg-aside-black: #000000;
+	--color-bg-toolbar-graylight: #282828;
+	--color-primary-color-w: #ffffff;
+	--color-button-gray: #a3a3a3;
+	--color-border-green: #9ae22d;
+	--color-icon-gray: #808080;
+}
+/* ****** flex utility ******* */
+.d-flex {
+    display: flex;
+}
+.content {
+    height: calc(100vh / 90px);
+    background-color: blueviolet;
+}
+#sidebar {
+    width: 200px;
+}
+main {
+    background-color: bisque;
+    width: calc(100% - 200px);
+    padding: 100px 20px 20px 20px;
+    overflow-y: auto;
+}
+.header {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+}
+#toolbar {
+    height: 90px;
+    background-color: aqua;
+}
