@@ -9,9 +9,7 @@ ul {
 }
 
 /* **** general ****+ */
-.wrapper {
-    height: 100vh;
-}
+
 :root {
 	--color-bg-main: #141922;
 	--color-bg-aside-black: #000000;
@@ -21,23 +19,48 @@ ul {
 	--color-border-green: #9ae22d;
 	--color-icon-gray: #808080;
 }
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1.5em;
+    font-style: normal
+}
+.wrapper {
+    height: 100vh;
+}
+.content {
+    height: calc(100vh / 90px);
+}
+/* ************ utility */
+.p-20 {
+    padding: 20px;
+}
+.small-text {
+    color: var(--color-bg-toolbar-graylight);
+    font-weight: 1em;
+}
+.text-uppercase {
+        text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+.border-green {
+    border-bottom: 1px solid var(--color-border-green);
+}
 /* ****** flex utility ******* */
 .d-flex {
     display: flex;
 }
-.content {
-    height: calc(100vh / 90px);
-    background-color: blueviolet;
-}
-#sidebar {
-    width: 200px;
-}
+/*  ************* main********* */
 main {
-    background-color: bisque;
+    background-color: var(--color-bg-main);
     width: calc(100% - 200px);
+    height: calc(100vh - 90px);
     padding: 100px 20px 20px 20px;
     overflow-y: auto;
 }
+/* ********** header **********++ */
 .header {
     background-color: rgba(0, 0, 0, 0.1);
     height: 80px;
@@ -45,8 +68,26 @@ main {
     top: 0;
     left: 200px;
     width: calc(100% - 200px);
+    padding: 20px;
 }
+/* ******** nav *********+ */
+.nav {
+    padding: 20px;
+}
+.nav a {
+    color: var(--color-icon-gray);
+}
+/* ********* sidebar ************ */
+#sidebar {
+    width: 200px;
+    background-color: var(--color-bg-aside-black);
+    color: var(--color-primary-color-w);
+    padding: 20px;
+}
+
+/* *********** toolbar *********** */
 #toolbar {
     height: 90px;
     background-color: aqua;
+    padding: 20px;
 }
