@@ -116,11 +116,13 @@ a {
 button {
     border: 1px solid var(--color-primary-color-w);
     border-radius: 20px;
+    margin-right: 50px;
 }
 button a {
-    padding: 15px 30px;
+    padding: 20px 30px;
     color: var(--color-primary-color-w);
     background-color:var(--color-header);
+    padding: 10px 20px;
 }
 /* ********* sidebar ************ */
 #sidebar {
@@ -159,12 +161,17 @@ button a {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    padding-right: 5px;
     display: flex;
     justify-content: center;
     align-self: center;
 }
-
+.p-right10 {
+    padding-right: 10px;
+}
+.p-top-bottom{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 /*  ************* main********* */
 main {
     background-color: var(--color-bg-main);
