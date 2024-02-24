@@ -19,14 +19,58 @@
 <body>
     <div class="wrapper">
         <div class="content d-flex">
+            <!-- ------------ header ------------- -->
             <div class="header">
                 <button class="text-uppercase bg-header ">
                     <a href="#">effettua l'upgrade</a> 
                 </button>
             </div>
-            <div id="sidebar">
-                siderbar
+            <!-- ---------- sidebar ------------- -->
+            <div id="sidebar" class=" d-flex flex-column space-between">
+                <div class="top line-height2">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="logo Spotify">
+                    </div>
+                    <div class="home d-flex p-top-right align-items">
+                       <a href="#"> <img src="img/home.svg" alt="immagine di home"></a>
+                        <a href="#"><span class="strong text-white text-capitalize">home</span></a>
+                    </div>
+                    <div class=" home d-flex p-top-">
+                        <a href="#"><img src="img/search.svg" alt="icona cerca"></a>
+                        <a href="#"><span class="text-gray small-text text-capitalize">cerca</span></a>
+                    </div>
+                    <div class=" home d-flex p-top10">
+                        <a href="#"><img src="img/libreria.svg" alt="icona libreria"></a>
+                        <a href="#"><span class="text-gray small-text text-capitalize">la tua libreria</span></a>
+                    </div>
+                    <h5 class="text-uppercase">playlist</h5>
+                    <div class="home">
+                        <a href="#"><i class="fa-solid fa-plus fa-sm d-flex"></i></a>
+                        <a href="#"> <span class="text-gray small-text text-capitalize">crea playlist</span></a>
+                        <ul>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
+                        </ul>
+                    </div>   
+                </div>
+                <div class="bottom">
+                    <div class="d-flex align-items line-height2">
+                        <img src="img/download.svg" alt="icona download">
+                        <a href="#"><span class="small-text text-gray">Installa app</span></a>
+                    </div>
+                    <hr class="border-gray"> </hr>
+                    <div id="user" class="d-flex align-items">
+                        <a href="#"><img src="img/profile.svg" alt="icona user"></a>
+                        <a href="#"><span class="strong text-white text-capitalize">john doe</span></a>
+                    </div>
+                </div>
             </div>
+            <!-- -------------- main ------------ -->
             <main>
                 <!-- ------ nav main ------- -->
                 <div class="nav d-flex justify-center">

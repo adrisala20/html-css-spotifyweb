@@ -18,7 +18,7 @@ ul {
 	--color-button-gray: #a3a3a3;
 	--color-border-green: #9ae22d;
 	--color-icon-gray: #808080;
-    --color-header:  rgba(0, 0, 0, 0.115);
+    --color-header:   rgba(0, 0, 0, 0.289);
 }
 body {
     font-family: "Montserrat", sans-serif;
@@ -29,14 +29,23 @@ body {
     height: 100vh;
 }
 .content {
-    height: calc(100vh / 90px);
+    height: calc(100vh - 90px);
 }
 p {
     padding: 15px 0px 0px 0px;
 }
 /* ************ utility */
+.line-height2 {
+    line-height: 2rem;
+}
 .p-20 {
     padding: 20px;
+}
+.p-top10px {
+    padding-top: 10px;
+}
+.p-top-right {
+    padding: 20px 20px 0 0;
 }
 .text-white {
     color: var(--color-primary-color-w);
@@ -58,12 +67,14 @@ p {
         text-transform: uppercase;
 }
 .border-green {
-    width: 7em;
+    width: 3rem;
     border-bottom: 1px solid var(--color-border-green);
+}
+.border-gray {
+    border-bottom: 1px solid var(--color-icon-gray);
 }
 a {
     text-decoration: none;
-    padding: 10px;
 }
 .bg-header {
     background-color: var(--color-header);
@@ -72,8 +83,14 @@ a {
 .d-flex {
     display: flex;
 }
+.flex-column {
+    flex-direction: column;
+}
 .wrap {
     flex-wrap: wrap;
+}
+.space-between {
+    justify-content: space-between;
 }
 .justify-center {
     justify-content: center;
@@ -87,7 +104,7 @@ a {
 }
 /* ********** header **********++ */
 .header {
-    background-color: rgba(0, 0, 0, 0.115);
+    background-color: var(--color-header);
     height: 80px;
     position: fixed;
     top: 0;
@@ -103,7 +120,7 @@ button {
 button a {
     padding: 15px 30px;
     color: var(--color-primary-color-w);
-    background-color: ;
+    background-color:var(--color-header);
 }
 /* ********* sidebar ************ */
 #sidebar {
@@ -111,6 +128,41 @@ button a {
     background-color: var(--color-bg-aside-black);
     color: var(--color-primary-color-w);
     padding: 20px;
+}
+.logo img {
+    width: 6.5rem;
+}
+.home img {
+    width: 2rem;
+    padding-right: 5px;
+}
+.home .fa-solid {
+    background-color: var(--color-button-gray);
+    color: var(--color-bg-aside-black);
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    padding: 20px;
+}
+.bottom img {
+    width: 1.5rem;
+    padding-right: 5px;
+}
+#user {
+    padding-top: 15px;
+}
+#user img {
+    color: var(--color-primary-color-w);
+    background-color: var(--color-icon-gray);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 /*  ************* main********* */
@@ -127,6 +179,7 @@ main {
 }
 .nav a {
     color: var(--color-icon-gray);
+    padding: 10px;
 }
 /* ********** row******* */
 h2 {
