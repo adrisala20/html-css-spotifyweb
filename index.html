@@ -14,6 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -43,13 +44,13 @@
                         <a href="#"><img src="img/libreria.svg" alt="icona libreria"></a>
                         <a href="#"><span class="text-gray small-text text-capitalize">la tua libreria</span></a>
                     </div>
-                    <h5 class="text-uppercase">playlist</h5>
+                    <span class="text-uppercase strong">playlist</span>
                     <div class="home">
                         <div class="p-top-bottom">
-                        <a href="#"><i class="fa-solid fa-plus fa-sm d-flex"></i></a>
+                        <a href="#"><span><i class="fa-solid fa-plus fa-sm d-flex"></i></span></a>
                         <a href="#"> <span class="text-gray small-text text-capitalize">crea playlist</span></a>
                         </div>
-                        <ul>
+                        <ul class="line-height2">
                             <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
                             <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
                             <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
@@ -78,7 +79,7 @@
             <main>
                 <!-- ------ nav main ------- -->
                 <div class="nav d-flex justify-center">
-                    <ul class="d-flex wrap p-20">
+                    <ul class="d-flex wrap">
                         <li><a href="#" class="text-uppercase">in evidenza</a>
                         <hr class="border-green"> </hr>
                     </li>
@@ -96,6 +97,9 @@
                         <div class="card">
                             <div class="card-img">
                             <img src="img/metal_lifting.jpg" alt="copertina musica metal">
+                            <div class="overlay">
+                                <a href="" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                            </div>
                             </div>
                             <p class="strong text-white text-capitalize">heavi metal</p>
                             <p class="strong small-text">Subtitle </p>
@@ -103,6 +107,9 @@
                         <div class="card">
                             <div class="card-img">
                             <img src="img/stranger.jpeg" alt="copertina stranger things">
+                            <div class="overlay">
+                                <a href="" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                            </div>
                             </div>
                             <p class="strong text-white text-capitalize"> stranger things, vol.1 a netflix original series soundtrack</p>
                             <p class="strong small-text text-capitalize">kyle dixon & michel stein</p>
@@ -110,6 +117,9 @@
                         <div class="card">
                             <div class="card-img">
                             <img src="img/aquietplace.jpeg" alt="copertina a quite place">
+                            <div class="overlay">
+                                <a href="" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                            </div>
                             </div>
                             <p class="strong text-white"> A quite place</p>
                             <p class="strong small-text text-capitalize">subtitle</p>
@@ -117,6 +127,9 @@
                         <div class="card">
                             <div class="card-img">
                             <img src="img/split.jpeg" alt="copertina split">
+                            <div class="overlay">
+                                <a href="" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                            </div>
                             </div>
                             <p class="strong text-white text-capitalize"> split</p>
                             <p class="strong small-text text-capitalize">subtitle</p>
@@ -124,6 +137,9 @@
                         <div class="card">
                             <div class="card-img">
                             <img src="img/cure.jpeg" alt="copertina cure for wellness">
+                            <div class="overlay">
+                                <a href="" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                            </div>
                             </div>
                             <p class="strong text-white"> A cure for wellness</p>
                             <p class="strong small-text text-capitalize">subtitle</p>
@@ -131,6 +147,9 @@
                         <div class="card">
                             <div class="card-img">
                             <img src="img/sinister.jpeg" alt="copertina sinister">
+                            <div class="overlay">
+                                <a href="" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                            </div>
                             </div>
                             <p class="strong text-white text-capitalize"> sinister</p>
                             <p class="strong small-text text-capitalize">subtitle</p>
@@ -145,19 +164,25 @@
                         <div class="card">
                             <div class="card-img">
                                 <img src="img/radar.jpeg" alt="copertina release radar">
+                                <div class="overlay">
+                                    <a href="" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                                </div>
                             </div>
                             <p class="text-white strong text-capitalize">release radar</p>
                         </div>
                         <div class="card">
                             <div class="card-img">
                                 <img src="img/mixdaily.jpeg" alt="copertina mix daily1">
+                                <div class="overlay">
+                                    <a href="" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                                </div>
                             </div>
                             <p class="text-white strong text-capitalize">daily mix 1</p>
                         </div>
                     </div>
                 </section>
                 <!-- ---------- third row ----------- -->
-                <section>
+                <section class="p-20">
                     <h2> Artisti poù popolari</h2>
                     <p class="small-text"> Più ascolti, più accurati saranno i suggerimenti</p>
                     <div class="d-flex wrap">
