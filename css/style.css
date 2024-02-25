@@ -42,6 +42,12 @@ p {
 .p-20 {
     padding: 20px;
 }
+.p-right10{
+    padding-right: 10px;
+}
+.p-left10 {
+    padding-left: 10px;
+}
 .p-top10px {
     padding-top: 10px;
 }
@@ -251,21 +257,35 @@ h2 {
     text-align: center;
   }
 .radious-card {
+    position: relative;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
+}
+.radious-card:hover img {
+    opacity:0.5;
 }
 .radious-card img {
     width: 100%;
     object-fit: cover;
 }
+.radious-card:hover .overlay {
+    opacity: 1;
+}
 /* *********** toolbar *********** */
 #toolbar {
     height: 90px;
-    background-color: aqua;
+    background-color: var(--color-bg-toolbar-graylight);
     padding: 20px;
 }
-
+.left {
+    line-height: 0.5px;
+    justify-content: space-between;
+}
+#toolbar img {
+    width: 3rem;
+    padding-right: 10px;
+}
 /* ***** query ********** */
 @media  screen and (max-width: 992px){
     .main {
