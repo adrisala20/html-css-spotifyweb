@@ -142,7 +142,7 @@ button a {
     padding: 20px;
     overflow-y: auto;
 }
-#logo img {
+#logo img{
     width: 6.5rem;
     display: block;
 }
@@ -208,9 +208,25 @@ main {
     color: var(--color-icon-gray);
     padding: 10px;
 }
-.nav a:hover {
+.nav a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+.nav.active {
+    color: var(--color-border-green);
+}
+.nav a:hover,
+.nav.active {
     color: var(--color-primary-color-w);
     font-weight: bold;
+}
+.nav a.active:after,
+.nav a:hover:after {
+    background-color: var(--color-border-green);
 }
 /* ********** row******* */
 h2 {
@@ -319,28 +335,41 @@ h2 {
         flex-wrap: wrap;
     }
     .card {
-        width: calc(100% / 2);
+        width: calc(100% / 2 - 20px);
     }
 }
 @media screen and (max-width: 576px){
-    main {
+    main{
         width: calc(100% - 50px);
+    }
+    .header {
+        width: calc(100% - 50px);
+        position: fixed;
+        top: 0;
+        left: 50px;
     }
     .card {
         width: 100%;
     }
     #sidebar {
         width: 50px;
+        padding: 10px;
     }
-    #logo img {
+    #logo {
         display: none;
     }
     #logo-small {
-        width: 5rem;
+        width: 1.5rem;
         display: block;
     }
     span {
         display: none;
         translate: 2sec;
+    }
+    .nav {
+        padding: 0;
+    }
+    .nav ul li {
+        line-height: 1;
     }
 }
