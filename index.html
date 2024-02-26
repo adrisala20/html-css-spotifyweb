@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -17,54 +22,69 @@
         <div class="content d-flex">
             <!-- ------------ header ------------- -->
             <div class="header d-flex">
-                <button class="text-uppercase bg-header "> <a href="#">effettua l'upgrade</a> 
+                <button class="text-uppercase bg-header "> <a href="#">effettua l'upgrade</a>
                 </button>
             </div>
             <!-- ---------- sidebar ------------- -->
             <div id="sidebar" class=" d-flex flex-column space-between">
-                <div class="top line-height2">
+                <div class="top flex-column line-height2">
                     <div>
                         <img src="img/logo.svg" alt="logo Spotify" id="logo">
                         <img src="img/logo-small.svg" alt="logo spotify" id="logo-small">
                     </div>
-                    <div class="home d-flex p-top-right align-items">
-                       <a href="#"> <img src="img/home.svg" alt="immagine di home"></a>
-                        <a href="#"><span class="strong text-white text-capitalize">home</span></a>
+                    <div class="home p-top-right align-items">
+                        <a href="#" class="active">
+                            <img src="img/home.svg" alt="immagine di home">
+                            <span class="strong text-white text-capitalize">home</span>
+                        </a>    
                     </div>
                     <div class=" home d-flex p-top-">
-                        <a href="#"><img src="img/search.svg" alt="icona cerca"></a>
-                        <a href="#"><span class="text-gray small-text text-capitalize">cerca</span></a>
+                        <a href="#">
+                            <img src="img/search.svg" alt="icona cerca">
+                            <span class="text-gray small-text text-capitalize">cerca</span>
+                        </a>    
                     </div>
                     <div class=" home d-flex p-top10">
-                        <a href="#"><img src="img/libreria.svg" alt="icona libreria"></a>
-                        <a href="#"><span class="text-gray small-text text-capitalize">la tua libreria</span></a>
+                        <a href="#">
+                            <img src="img/libreria.svg" alt="icona libreria">
+                            <span class="text-gray small-text text-capitalize">la tua libreria</span>
+                        </a>
                     </div>
                     <span class="text-uppercase strong">playlist</span>
-                    <div class="home">
+                    <div class="add-playlist">
                         <div class="p-top-bottom">
-                        <a href="#"><span><i class="fa-solid fa-plus fa-sm d-flex"></i></span></a>
-                        <a href="#"> <span class="text-gray small-text text-capitalize">crea playlist</span></a>
+                            <a href="#">
+                                <span><i class="fa-solid fa-plus fa-sm d-flex"></i></span>
+                                <span class="text-gray small-text text-capitalize">crea playlist</span></a>
                         </div>
                         <ul class="line-height2">
-                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
-                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
-                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
-                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
-                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
-                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
-                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a></li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a>
+                            </li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a>
+                            </li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a>
+                            </li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a>
+                            </li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a>
+                            </li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a>
+                            </li>
+                            <li><a href="#"><span class="text-gray small-text text-capitalize">nome playlist</span></a>
+                            </li>
                         </ul>
-                    </div>   
+                    </div>
                 </div>
                 <div class="bottom">
                     <div class="d-flex align-items line-height2">
                         <img src="img/download.svg" alt="icona download">
                         <a href="#"><span class="small-text text-gray">Installa app</span></a>
-                    </div> 
-                    <hr class="border-gray"> </hr>
+                    </div>
+                    <hr class="border-gray">
+                    </hr>
                     <div id="user" class="d-flex align-items">
                         <div class="p-right10">
-                        <a href="#"><img src="img/profile.svg" alt="icona user"></a>
+                            <a href="#"><img src="img/profile.svg" alt="icona user"></a>
                         </div>
                         <a href="#"><span class="strong text-white text-capitalize">john doe</span></a>
                     </div>
@@ -72,7 +92,7 @@
             </div>
             <!-- -------------- main ------------ -->
             <main>
-            <!-- ------ nav main ------- -->
+                <!-- ------ nav main ------- -->
                 <div class="nav d-flex justify-center">
                     <ul class="d-flex wrap">
                         <li><a href="#" class="text-uppercase active">in evidenza</a></li>
@@ -83,66 +103,67 @@
                         <li><a href="#" class="text-uppercase ">scopri</a></li>
                     </ul>
                 </div>
-            <!-- ---------- first row ------ -->
+                <!-- ---------- first row ------ -->
                 <section class="p-20">
                     <h2> Recently played</h2>
                     <div class="row d-flex wrap">
                         <div class="card">
                             <div class="card-img">
-                            <img src="img/metal_lifting.jpg" alt="copertina musica metal">
-                            <div class="overlay">
-                                <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
-                            </div>
+                                <img src="img/metal_lifting.jpg" alt="copertina musica metal">
+                                <div class="overlay">
+                                    <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                                </div>
                             </div>
                             <p class="strong text-white text-capitalize">heavi metal</p>
                             <p class="strong small-text text-capitalize">Subtitle </p>
                         </div>
                         <div class="card">
                             <div class="card-img">
-                            <img src="img/stranger.jpeg" alt="copertina stranger things">
-                            <div class="overlay">
-                                <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                                <img src="img/stranger.jpeg" alt="copertina stranger things">
+                                <div class="overlay">
+                                    <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                                </div>
                             </div>
-                            </div>
-                            <p class="strong text-white text-capitalize"> stranger things, vol.1 a netflix original series soundtrack</p>
+                            <p class="strong text-white text-capitalize"> stranger things, vol.1 a netflix original
+                                series soundtrack</p>
                             <p class="strong small-text text-capitalize">kyle dixon & michel stein</p>
                         </div>
                         <div class="card">
                             <div class="card-img">
-                            <img src="img/aquietplace.jpeg" alt="copertina a quite place">
-                            <div class="overlay">
-                                <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
-                            </div>
+                                <img src="img/aquietplace.jpeg" alt="copertina a quite place">
+                                <div class="overlay">
+                                    <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                                </div>
                             </div>
                             <p class="strong text-white"> A quite place</p>
                             <p class="strong small-text text-capitalize">subtitle</p>
                         </div>
                         <div class="card">
                             <div class="card-img">
-                            <img src="img/split.jpeg" alt="copertina split">
-                            <div class="overlay">
-                                <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
-                            </div>
+                                <img src="img/split.jpeg" alt="copertina split">
+                                <div class="overlay">
+                                    <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                                </div>
                             </div>
                             <p class="strong text-white text-capitalize"> split</p>
                             <p class="strong small-text text-capitalize">subtitle</p>
                         </div>
                         <div class="card">
                             <div class="card-img">
-                            <img src="img/cure.jpeg" alt="copertina cure for wellness">
-                            <div class="overlay">
-                                <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
-                            </div>
+                                <img src="img/cure.jpeg" alt="copertina cure for wellness">
+                                <div class="overlay">
+                                    <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                                </div>
                             </div>
                             <p class="strong text-white"> A cure for wellness</p>
                             <p class="strong small-text text-capitalize">subtitle</p>
                         </div>
                         <div class="card">
                             <div class="card-img">
-                            <img src="img/sinister.jpeg" alt="copertina sinister">
-                            <div class="overlay">
-                                <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
-                            </div>
+                                <img src="img/sinister.jpeg" alt="copertina sinister">
+                                <div class="overlay">
+                                    <a href="#" class="icon"><i class="fa-regular fa-circle-play fa-sm"></i></a>
+                                </div>
                             </div>
                             <p class="strong text-white text-capitalize"> sinister</p>
                             <p class="strong small-text text-capitalize">subtitle</p>
@@ -202,10 +223,11 @@
             </main>
         </div>
         <div id="toolbar" class="d-flex space-between text-white">
-            <div class="left d-flex align-items "> 
+            <div class="left d-flex align-items ">
                 <ul class="d-flex align-items">
                     <li><img src="img/sinister.jpeg" alt="copertina sinister"></li>
-                    <li> <p class="text-white strong text-capitalize">sinister</p>
+                    <li>
+                        <p class="text-white strong text-capitalize">sinister</p>
                         <p class="small-text-text-capitalize">brano nome</p>
                     </li>
                 </ul>

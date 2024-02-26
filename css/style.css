@@ -22,7 +22,6 @@ ul {
 }
 body {
     font-family: "Montserrat", sans-serif;
-    font-weight: 1.5em;
     font-style: normal
 }
 .wrapper {
@@ -119,6 +118,7 @@ a {
     width: calc(100% - 200px);
     padding: 20px;
     justify-content: flex-end;
+    z-index:3000;
 }
 button {
     border: 1px solid var(--color-primary-color-w);
@@ -140,17 +140,32 @@ button a {
     background-color: var(--color-bg-aside-black);
     color: var(--color-primary-color-w);
     padding: 20px;
-    overflow-y: auto;
 }
 #logo img{
     width: 6.5rem;
     display: block;
 }
-.home img {
-    width: 2rem;
+#logo-small {
+    display: none;
+}
+#sidebar .home  img {
+    opacity:0.8;
+    height: 27px;
+    width: auto;
+    display: inline-block;
     padding-right: 5px;
 }
-.home .fa-solid {
+#sidebar .home a {
+    border-left: 3px solid transparent;
+}
+#sidebar .home a.active {
+    border-left: 3px solid var(--color-border-green);
+}
+#sidebar .home a:hover,
+#sidebar .home a.active {
+    border-color: var(--color-border-green);
+}
+.add-playlist .fa-solid {
     background-color: var(--color-button-gray);
     color: var(--color-bg-aside-black);
     width: 2.5rem;
@@ -161,8 +176,23 @@ button a {
     align-items: center;
     padding: 20px;
 }
-#logo-small {
-    display: none;
+#sidebar .add-playlist {
+    min-height: 0;
+}
+#sidebar .add-playlist ul{
+    height: calc(100% - 20px);
+    overflow-y: auto;
+}
+#sidebar .top {
+    height: calc(100% - 80px);
+    width: 100%;
+    overflow-y: hidden;
+}
+#sidebar .bottom {
+    height: 80px;
+    width: 100%;
+    background-color: var(--color-bg-aside-black);
+    overflow-y: hidden;
 }
 .bottom img {
     width: 1.5rem;
@@ -188,10 +218,6 @@ button a {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-/* #sidebar .top .home a:hover,
-#sidebar .bottom div a:hover {
-    color: var(--color-primary-color-w);
-} */
 /*  ************* main********* */
 main {
     background-color: var(--color-bg-main);
@@ -201,9 +227,6 @@ main {
     overflow-y: auto;
 }
 /* ******** nav *********+ */
-.nav {
-    padding: 20px;
-}
 .nav a {
     color: var(--color-icon-gray);
     padding: 10px;
@@ -297,6 +320,7 @@ h2 {
     height: 90px;
     background-color: var(--color-bg-toolbar-graylight);
     padding: 20px;
+    overflow-y: hidden;
 }
 .left {
     line-height: 0.5px;
@@ -315,9 +339,13 @@ h2 {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .nav ul li {
-        line-height: 40px;
+    .nav {
+        padding: 0;
     }
+    .nav ul li {
+        line-height: 1;
+    }
+
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -365,11 +393,5 @@ h2 {
     span {
         display: none;
         translate: 2sec;
-    }
-    .nav {
-        padding: 0;
-    }
-    .nav ul li {
-        line-height: 1;
     }
 }
