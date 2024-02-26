@@ -142,8 +142,9 @@ button a {
     padding: 20px;
     overflow-y: auto;
 }
-.logo img {
+#logo img {
     width: 6.5rem;
+    display: block;
 }
 .home img {
     width: 2rem;
@@ -159,6 +160,9 @@ button a {
     display: inline-flex;
     align-items: center;
     padding: 20px;
+}
+#logo-small {
+    display: none;
 }
 .bottom img {
     width: 1.5rem;
@@ -325,8 +329,15 @@ h2 {
     .card {
         width: 100%;
     }
-    .sidebar {
+    #sidebar {
         width: 50px;
+    }
+    #logo img {
+        display: none;
+    }
+    #logo-small {
+        width: 5rem;
+        display: block;
     }
     span {
         display: none;
