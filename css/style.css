@@ -175,18 +175,18 @@ button a {
     opacity: 1;
     border-color: var(--color-border-green);
 }
-.playlist .fa-solid {
+.add-playlist .fa-solid {
     background-color: var(--color-button-gray);
     color: var(--color-bg-aside-black);
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     font-size: larger;
     justify-content: center;
     display: inline-flex;
     align-items: center;
     padding: 20px;
 }
-#sidebar .add-playlist {
+#sidebar .playlist {
     min-height: 0;
 }
 #sidebar .playlist div a,
@@ -198,18 +198,15 @@ button a {
 #sidebar .playlist ul li a:hover {
     opacity: 1;
 }
-#sidebar .top1 {
-    height: 200px;
-}
 #sidebar .playlist ul {
-    height: calc(100% - 280px);
+    height: calc(100% - 60px);
     width: 100%; 
-    overflow-y: scroll;
+    overflow-y: auto;
     scrollbar-color: var(--color-icon-gray) var(--color-bg-aside-black);
     scrollbar-gutter: stable;      
 }
 #sidebar .bottom {
-    height: 80px;
+    height: 60px;
     width: 100%;
     background-color: var(--color-bg-aside-black);
 }
@@ -230,7 +227,6 @@ button a {
     justify-content: center;
     align-self: center;
 }
-
 /*  ************* main********* */
 main {
     background-color: var(--color-bg-main);
@@ -375,9 +371,6 @@ section {
     height: 60%;
     justify-content: space-between;
 }
-#toolbar .center-bottom {
-   
-}
 .center .center-top .fa-solid {
     opacity: 0.5;
     cursor: pointer;
@@ -393,23 +386,34 @@ section {
     opacity: 1;
     font-size:medium;
 }
+#toolbar .center-bottom {
+   align-items: center;
+   text-align: center;
+}
 .center-number {
     font-size: x-small;
-    padding: 0 10px 0 10px;
 }
-.slider {
+.slider-center {
     width: 100%;
-    height: 8px;
+    height: 5px;
     background-color:var(--color-border-green);
     outline: none;
     opacity: 0.7;
     transition: opacity .2s;
+    padding: 0 10px 0 10px;
   }
+.slider-center:hover,
 .slider:hover {
     opacity: 1;
 }
-.slider:in-range{
-    background-color: #9ae22d;
+.slider {
+    width: 50%;
+    height: 5px;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+.right .fa-solid {
+    font-size: x small;
 }
 #toolbar .right {
     width: 20%;
