@@ -493,7 +493,8 @@ section {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .left ul .left-icon {
-        flex-direction;
+    .left ul li .fa-solid {
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
