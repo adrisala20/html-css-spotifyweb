@@ -399,6 +399,7 @@ section {
     opacity: 0.7;
     transition: opacity .2s;
     padding: 0 10px 0 10px;
+    min-width: 450px;
   }
 .slider-center:hover,
 .slider:hover {
@@ -440,6 +441,9 @@ section {
     .card{
         width: calc(100% / 4);
     }
+    .slider-center {
+        min-width: 300px;
+    }
 }
 @media screen and (max-width:768px){
     .main {
@@ -454,6 +458,9 @@ section {
     }
     .card {
         width: calc(100% / 2);
+    }
+    .slider-center{
+        min-height: 250px;
     }
 }
 @media screen and (max-width: 576px){
@@ -490,6 +497,9 @@ section {
     }
     .left ul li .fa-solid {
         flex-direction: column;
+    }
+    .slider-center {
+        min-width: 200px;
     }
     .right {
         width: 25%;
