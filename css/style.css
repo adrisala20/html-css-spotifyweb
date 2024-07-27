@@ -47,6 +47,9 @@ body {
 .p-top10px {
     padding-top: 10px;
 }
+.p-top20{
+    padding-top: 20px;
+}
 .p-top-right {
     padding: 20px 20px 0 0;
 }
@@ -262,6 +265,47 @@ main {
 .nav a.active:after,
 .nav a:hover:after {
     background-color: var(--color-border-green);
+}
+/* ************ hero ************* */
+.hero{
+    max-height: 500px;
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+#text-hero .inline-text{
+    position: absolute;
+    bottom: 130px;
+    left: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+#text-hero .karol {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    font-size: 70px;
+    color: white;
+    font-weight: bolder;
+}
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+#text-hero p{
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+    color: white;
+    font-weight: bold;
 }
 /* ********** row******* */
 h2 {
