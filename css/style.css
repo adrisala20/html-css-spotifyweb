@@ -57,6 +57,9 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.p-bottom20{
+    padding-bottom: 20px;
+}
 .text-white {
     color: var(--color-primary-color-w);
 }
@@ -201,6 +204,9 @@ button a {
     overflow-y: auto;
     scrollbar-color: var(--color-icon-gray) var(--color-bg-aside-black);
     scrollbar-gutter: stable;
+}
+.smallplaylist{
+    padding-top: 15px;
 }
 #sidebar .bottom {
     height: 60px;
